@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zapp</title>
+  <link rel="icon" href="https://necenbpitqhjjekatnxr.supabase.co/storage/v1/object/sign/Produtos/Utilitarios%20e%20Logos/logo.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9hYWYyM2I2ZS1mMmU3LTQyN2UtYjVmOC1iYmU3ZDYzMDBiMjIiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJQcm9kdXRvcy9VdGlsaXRhcmlvcyBlIExvZ29zL2xvZ28ucG5nIiwiaWF0IjoxNzU4Njg3MTMwLCJleHAiOjE3OTAyMjMxMzB9.T6BtWnd1aayUz7hzRLFnHDtF1e16k0MLZoCu7iYkFPM" type="image/png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script type="module" src="./index.js"></script>
+  <style>
+    body {
+      background: url('https://necenbpitqhjjekatnxr.supabase.co/storage/v1/object/sign/Produtos/Utilitarios%20e%20Logos/bg.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9hYWYyM2I2ZS1mMmU3LTQyN2UtYjVmOC1iYmU3ZDYzMDBiMjIiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJQcm9kdXRvcy9VdGlsaXRhcmlvcyBlIExvZ29zL2JnLnBuZyIsImlhdCI6MTc1ODY4NzM1NSwiZXhwIjoxNzkwMjIzMzU1fQ.tgpgvM8E5Rh8tgfBbrW3kb7G9LAzrnorEmp1A_rNuBA') no-repeat center center/cover;
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col text-gray-800">
+  
+
+  <!-- Header -->
+  <header class="flex items-center justify-between px-6 py-4 bg-white/80 backdrop-blur-sm shadow-md sticky top-0 z-50">
+    <img src="https://necenbpitqhjjekatnxr.supabase.co/storage/v1/object/sign/Produtos/Utilitarios%20e%20Logos/logo.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9hYWYyM2I2ZS1mMmU3LTQyN2UtYjVmOC1iYmU3ZDYzMDBiMjIiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJQcm9kdXRvcy9VdGlsaXRhcmlvcyBlIExvZ29zL2xvZ28ucG5nIiwiaWF0IjoxNzU4Njg3MTMwLCJleHAiOjE3OTAyMjMxMzB9.T6BtWnd1aayUz7hzRLFnHDtF1e16k0MLZoCu7iYkFPM" alt="Logo" class="h-10" />
+    <nav class="space-x-4 hidden md:block">
+      <a href="#sobre" class="hover:text-red-500">Sobre o Projeto!</a>
+    </nav>
+    <div id="auth-area" class="space-x-2">
+      <a href="login.html" class="px-4 py-2 bg-red-500 text-white rounded-full hover:bg-red-600">Entrar</a>
+      <a href="signup.html" class="px-4 py-2 border border-red-500 text-red-500 rounded-full hover:bg-red-500 hover:text-white">Cadastrar</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main
+    id="hero"
+    class="flex-grow flex flex-col justify-center items-center text-center px-4 min-h-screen"
+    data-aos="fade-up"
+  >
+    <div class="max-w-2xl">
+      <img src="https://necenbpitqhjjekatnxr.supabase.co/storage/v1/object/sign/Produtos/Utilitarios%20e%20Logos/logo.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9hYWYyM2I2ZS1mMmU3LTQyN2UtYjVmOC1iYmU3ZDYzMDBiMjIiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJQcm9kdXRvcy9VdGlsaXRhcmlvcyBlIExvZ29zL2xvZ28ucG5nIiwiaWF0IjoxNzU4Njg3MTMwLCJleHAiOjE3OTAyMjMxMzB9.T6BtWnd1aayUz7hzRLFnHDtF1e16k0MLZoCu7iYkFPM" class="w-40 h-40 rounded-full border-4 border-white mb-2 mx-auto">
+      <h1 class="text-4xl md:text-6xl font-extrabold text-white drop-shadow-lg mb-6">
+        Sua jornada começa aqui
+      </h1>
+      <h2 id="nome-usuario-topo" class="text-2xl font-semibold text-white mb-4"></h2>
+      <p class="text-lg md:text-xl text-white/90 mb-8">
+        Tenha acesso ao melhor produto para seu comércio!
+      </p>
+      <a
+        href="home.html"
+        class="inline-block px-8 py-3 bg-red-500 text-white text-lg font-semibold rounded-full hover:bg-red-600 transition"
+        >Começar Agora</a
+      >
+    </div>
+  </main>
+
+  <!-- Seção Sobre -->
+  <section
+    id="sobre"
+    class="bg-white py-16 px-6 text-center"
+    style="background: rgba(255 255 255 / 0.9); backdrop-filter: saturate(180%) blur(20px);"
+    data-aos="fade-up"
+  >
+    <h2 class="text-3xl font-bold mb-4">Sobre o Projeto</h2>
+    <p class="max-w-3xl mx-auto text-lg">
+      Nosso cardápio digital é uma plataforma completa desenvolvida para restaurantes, lanchonetes, cafés e food trucks. Com ele, você pode cadastrar seus produtos, adicionar fotos, preços, descrições e receber pedidos diretamente dos seus clientes — tudo de forma rápida e automatizada.
+    </p>
+  </section>
+<!-- Seção Divulgação -->
+<section id="divulgacao" class="bg-white/90 py-16 px-6" data-aos="fade-up">
+  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    <div>
+      <h2 class="text-3xl font-bold mb-4 text-center md:text-left">Por que escolher nosso app?</h2>
+      <p class="text-lg mb-6 text-center md:text-left">
+        Oferecemos uma experiência moderna, rápida e prática para clientes e estabelecimentos. Nosso app de cardápio digital foi criado para facilitar pedidos, eliminar filas e modernizar o atendimento.
+      </p>
+      <ul class="list-disc list-inside space-y-2 text-gray-700">
+        <li>Visualização clara e atrativa dos pratos</li>
+        <li>Pedidos feitos direto pelo celular, sem espera</li>
+        <li>Atualizações instantâneas do cardápio</li>
+        <li>Integração com sistemas de pagamento e entrega</li>
+        <li>Redução de custos com cardápios físicos</li>
+      </ul>
+    </div>
+    <div class="flex justify-center">
+      <img src="https://necenbpitqhjjekatnxr.supabase.co/storage/v1/object/sign/Produtos/Utilitarios%20e%20Logos/modelo-emp.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9hYWYyM2I2ZS1mMmU3LTQyN2UtYjVmOC1iYmU3ZDYzMDBiMjIiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJQcm9kdXRvcy9VdGlsaXRhcmlvcyBlIExvZ29zL21vZGVsby1lbXAucG5nIiwiaWF0IjoxNzU4Njg3Mjg5LCJleHAiOjE3OTAyMjMyODl9.aBmsiq0FfpOL197iEeOXT-OParf_S5QsKUadZPSg544" alt="Demonstração do app" class="rounded-lg shadow-lg max-w-full h-auto" />
+    </div>
+  </div>
+</section>
+
+<!-- Seção Feedback -->
+<section id="feedback" class="bg-red-500 py-16 px-6 text-white" data-aos="fade-up">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-8">O que dizem nossos usuários</h2>
+<div class="space-y-8">
+  <div class="bg-red-600 rounded-lg p-6 shadow-lg">
+    <p class="italic mb-4">"Aumentamos nossas vendas em 30% com o app. Os clientes adoram poder pedir pelo celular!"</p>
+    <span class="font-semibold">— Lucas B., dono de hamburgueria</span>
+  </div>
+  <div class="bg-red-600 rounded-lg p-6 shadow-lg">
+    <p class="italic mb-4">"Muito mais prático que o cardápio de papel. Fácil de usar e bem organizado."</p>
+    <span class="font-semibold">— Juliana M., cliente frequente</span>
+  </div>
+  <div class="bg-red-600 rounded-lg p-6 shadow-lg">
+    <p class="italic mb-4">"Hoje não abro mão do app. Os pedidos chegam certinhos e os clientes têm mais autonomia."</p>
+    <span class="font-semibold">— Renata G., gestora de restaurante</span>
+  </div>
+</div>
+</section>
+
+  <!-- Seção Contato -->
+  <section
+    id="contato"
+    class="bg-white py-16 px-6 text-center"
+    style="background: rgba(255 255 255 / 0.9); backdrop-filter: saturate(180%) blur(20px);"
+    data-aos="fade-up"
+  >
+    <h2 class="text-3xl font-bold mb-4">Fale Conosco</h2>
+    <p class="text-lg">
+      Tem alguma dúvida ou sugestão? Nos envie uma mensagem no Instagram ou WhatsApp!
+    </p>
+    <div class="flex justify-center space-x-6 mt-6">
+      <a href="https://github.com/FBprgm/FBprgm" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg" class="w-8 h-8" alt="github">
+      </a>
+      <a href="https://wa.me/+5521983304162" target="_blank" rel="noopener">
+        <img src="https://necenbpitqhjjekatnxr.supabase.co/storage/v1/object/sign/Produtos/Utilitarios%20e%20Logos/wpp.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9hYWYyM2I2ZS1mMmU3LTQyN2UtYjVmOC1iYmU3ZDYzMDBiMjIiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJQcm9kdXRvcy9VdGlsaXRhcmlvcyBlIExvZ29zL3dwcC5wbmciLCJpYXQiOjE3NTg2ODczOTYsImV4cCI6MTc5MDIyMzM5Nn0.fvf3GVo1ADMNxLRdPGgyuglL4AmGnOP4BMTFTbJCFL4" class="w-8 h-8" alt="github" />
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer
+    class="bg-white/80 backdrop-blur-sm text-gray-700 text-sm text-center py-4"
+  >
+    &copy; 2025 - Desenvolvido por
+    <a
+      href="https://www.linkedin.com/in/fabianodev"
+      target="_blank"
+      class="text-red-500 hover:underline"
+      >Fabiano Dev</a
+    >
+  </footer>
+  
+  
+</body>
+</html>

@@ -1,0 +1,27 @@
+{
+  "name": "zapp-cardapio-digital",
+  "version": "1.0.0",
+  "description": "Aplicativo de cardápio digital para delivery",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./src/output.css --watch",
+    "dev": "tailwindcss -i ./src/input.css -o ./src/output.css --watch",
+    "build:prod": "tailwindcss -i ./src/input.css -o ./src/output.css --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  },
+  "keywords": [
+    "cardapio",
+    "digital",
+    "delivery",
+    "restaurant",
+    "food"
+  ],
+  "author": "Fabiano Dev",
+  "license": "MIT",
+  "dependencies": {
+    "TailwindCSS": "npm:tailwindcss@^3.4.19"
+  }
+}
