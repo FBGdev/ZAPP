@@ -324,7 +324,7 @@ No painel do Supabase, vá em:
 
 **Fabiano Dev** - Desenvolvedor Junior
 
-[![GitHub](https://img.shields.io/badge/GitHub-FBprgm-333?style=for-the-badge)](https://github.com/FBprgm)
+[![GitHub](https://img.shields.io/badge/GitHub-FBprgm-333?style=for-the-badge)](https://github.com/FBGdev)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-FabianoDev-0077b5?style=for-the-badge)](https://www.linkedin.com/in/fabianodev)
 [![Instagram](https://img.shields.io/badge/Instagram-zappoficial_-E4405F?style=for-the-badge)](https://www.instagram.com/zappoficial_)
 [![WhatsApp](https://img.shields.io/badge/WhatsApp-+5521983304162-25D366?style=for-the-badge)](https://wa.me/+5521983304162)
